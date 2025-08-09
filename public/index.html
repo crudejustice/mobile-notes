@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pocket Notes</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#06251b">
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .then((reg) => console.log("Service Worker registered", reg))
+      .catch((err) => console.error("Service Worker registration failed", err));
+  });
+}
+</script>
+
 </head>
 <body>
   <header class="app-header">
