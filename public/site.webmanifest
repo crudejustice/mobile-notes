@@ -2,10 +2,9 @@
   "name": "Mobile Notes",
   "short_name": "Notes",
   "description": "A simple mobile-friendly notes app with offline support.",
-  "start_url": "/index.html",
+  "start_url": "/",
   "scope": "/",
-  "id": "/index.html",
-
+  "id": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#06251b",
