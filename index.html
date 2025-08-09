@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pocket Notes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+  <h1>Pocket Notes</h1>
+</header>
+
+<main class="container">
+  <form id="note-form" class="card">
+    <label for="note" class="sr-only">New note</label>
+    <textarea id="note" placeholder="Type a quick note..." rows="3"></textarea>
+
+    <!-- NEW: tags input -->
+    <input id="tags" type="text" placeholder="Tags (comma or #separated, e.g. work, errands)" />
+
+    <button type="submit" class="btn">Add</button>
+  </form>
+
+  <!-- NEW: search + filter UI -->
+  <section class="toolbar card">
+    <input id="search" type="search" placeholder="Search notes…" />
+    <div id="tag-filter" class="tag-row"></div>
+  </section>
+
+  <section id="list" class="list"></section>
+</main>
+
+  <footer class="app-footer">Saved locally • Works offline later</footer>
+  <script src="app.js"></script>
+</body>
+</html>
